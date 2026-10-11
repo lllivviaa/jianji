@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>简记</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700&display=swap">
+<style>
+/* Layout: single reading column (~68ch), sticky section switcher; document treatment, quiet. */
+:root{
+  --bg:#F5F7FC; --paper:#FFFFFF; --ink:#16203A; --muted:#5D6785; --line:#DDE3F0;
+  --accent:#4766EF; --accent-soft:#E6EBFD;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-display:"Noto Serif SC","Songti SC",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1320; --paper:#171C2C; --ink:#E6EAF5; --muted:#9AA3BE; --line:#2A3148;
+  --accent:#8FA6FF; --accent-soft:#222B4A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1320; --paper:#171C2C; --ink:#E6EAF5; --muted:#9AA3BE; --line:#2A3148;
+  --accent:#8FA6FF; --accent-soft:#222B4A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;padding-inline:16px}
+.wrap{max-width:720px;margin:0 auto;padding-block:40px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.icon{width:56px;height:56px;border-radius:14px;background:linear-gradient(180deg,#78C8FF,#465CF0);display:grid;place-items:center;flex:none}
+.icon svg{width:30px;height:30px}
+h1{font-family:var(--f-display);font-size:28px;line-height:1.25;margin:0;text-wrap:balance}
+.sub{color:var(--muted);font-size:14px}
+nav{position:static;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:10px;display:flex;gap:8px;flex-wrap:wrap;z-index:2}
+nav a{padding:6px 14px;border-radius:999px;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);font-size:14px}
+nav a:hover,nav a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
+section{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px 22px;margin-top:16px;scroll-margin-top:64px}
+h2{font-size:21px;margin:0 0 4px}
+h3{font-size:16px;margin:22px 0 4px}
+p,li{color:var(--ink)}
+ul{padding-left:1.2em;margin:6px 0}
+.meta{color:var(--muted);font-size:14px;margin-bottom:12px}
+.lead{background:var(--accent-soft);border-radius:12px;padding:12px 14px;margin:8px 0 4px}
+.mail{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px}
+.mail code{font-family:ui-monospace,Menlo,monospace;font-size:15px;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:8px;user-select:all}
+.mail button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer}
+.mail button:focus-visible{outline:2px solid var(--accent)}
+hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.en p,.en li{color:var(--muted)}
+footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+</style>
+</head><body>
+<div class="wrap">
+<header><div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4L19 7"/></svg></div><div><h1>简记</h1><div class="sub">打勾就消失，日历回看每一天</div></div></header>
+<nav><a href="index.html">首页</a><a href="privacy.html">隐私政策</a><a href="support.html">技术支持</a></nav>
+<section>
+<p>简记是一个只做好一件事的待办 App：记下来，做完，打勾。支持 iPhone、iPad 和 Mac。</p>
+<ul>
+<li><a href="privacy.html">隐私政策 Privacy Policy</a></li>
+<li><a href="support.html">技术支持 Support</a></li>
+</ul>
+<p>联系邮箱：livviaa@163.com</p>
+</section>
+<footer>© 2026 简记 JianJi · 联系：livviaa@163.com</footer>
+</div></body></html>

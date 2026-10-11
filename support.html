@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>简记 技术支持</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700&display=swap">
+<style>
+/* Layout: single reading column (~68ch), sticky section switcher; document treatment, quiet. */
+:root{
+  --bg:#F5F7FC; --paper:#FFFFFF; --ink:#16203A; --muted:#5D6785; --line:#DDE3F0;
+  --accent:#4766EF; --accent-soft:#E6EBFD;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-display:"Noto Serif SC","Songti SC",serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1320; --paper:#171C2C; --ink:#E6EAF5; --muted:#9AA3BE; --line:#2A3148;
+  --accent:#8FA6FF; --accent-soft:#222B4A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1320; --paper:#171C2C; --ink:#E6EAF5; --muted:#9AA3BE; --line:#2A3148;
+  --accent:#8FA6FF; --accent-soft:#222B4A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;padding-inline:16px}
+.wrap{max-width:720px;margin:0 auto;padding-block:40px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.icon{width:56px;height:56px;border-radius:14px;background:linear-gradient(180deg,#78C8FF,#465CF0);display:grid;place-items:center;flex:none}
+.icon svg{width:30px;height:30px}
+h1{font-family:var(--f-display);font-size:28px;line-height:1.25;margin:0;text-wrap:balance}
+.sub{color:var(--muted);font-size:14px}
+nav{position:static;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:10px;display:flex;gap:8px;flex-wrap:wrap;z-index:2}
+nav a{padding:6px 14px;border-radius:999px;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);font-size:14px}
+nav a:hover,nav a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
+section{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px 22px;margin-top:16px;scroll-margin-top:64px}
+h2{font-size:21px;margin:0 0 4px}
+h3{font-size:16px;margin:22px 0 4px}
+p,li{color:var(--ink)}
+ul{padding-left:1.2em;margin:6px 0}
+.meta{color:var(--muted);font-size:14px;margin-bottom:12px}
+.lead{background:var(--accent-soft);border-radius:12px;padding:12px 14px;margin:8px 0 4px}
+.mail{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:6px}
+.mail code{font-family:ui-monospace,Menlo,monospace;font-size:15px;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:8px;user-select:all}
+.mail button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer}
+.mail button:focus-visible{outline:2px solid var(--accent)}
+hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+.en p,.en li{color:var(--muted)}
+footer{color:var(--muted);font-size:13px;text-align:center;margin-top:28px}
+</style>
+</head><body>
+<div class="wrap">
+<header><div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.2 4L19 7"/></svg></div><div><h1>简记 技术支持</h1><div class="sub">JianJi Support</div></div></header>
+<nav><a href="index.html">首页</a><a href="privacy.html">隐私政策</a><a href="support.html">技术支持</a></nav>
+<section>
+
+<p><strong>联系邮箱 / Contact:</strong> livviaa@163.com</p>
+<h2>常见问题</h2>
+<p><strong>怎么添加待办？</strong>
+在首页底部输入框直接输入，例如「明天下午3点 交周报 #工作」「每周一三五 9点 健身」，会自动识别时间、重复和分类。不想打字可以点输入框右边的日历按钮，手动选择。</p>
+<p><strong>怎么用语音添加？</strong>
+点输入框右边的麦克风，直接说，例如「一会三点提醒我开会」「下周三在公司见客户」「明早七点叫我起床，设个闹钟」。说完会自动识别时间、地点和事情，点发送即可。</p>
+<p><strong>通知和闹钟有什么区别？</strong>
+默认到点弹出通知；句子里提到「闹钟」「叫我」，或在时间设置里打开「响铃」，iPhone / iPad（iOS 26 及以上）会像闹钟一样响「简记」提示音，屏幕上显示要做的事，可以直接点「完成」。</p>
+<p><strong>常用地点怎么设置？</strong>
+「我的」页面 →「常用地点」，像收货地址一样添加「家」「公司」和详细地址。之后说「在公司…」「到家…」会自动识别。</p>
+<p><strong>归档是什么？</strong>
+计划了但这次没做的事，在首页左滑选「归档」。它会离开首页，在日历里显示为灰色划线，不计入完成数。之后也可以改成完成或恢复成待办。</p>
+<p><strong>完成的事去哪了？</strong>
+打勾后会从首页隐藏。点首页右上角的眼睛按钮可以显示已完成的事，点前面的勾就能恢复。按日期回看，请去「记录」页。</p>
+<p><strong>怎么添加小组件？</strong>
+- iPhone 桌面：长按桌面空白处 →「编辑」→「添加小组件」→ 搜索「简记」。
+- iPhone 锁屏：长按锁屏 →「自定」→ 点时间下方的区域 → 选「简记」。
+- 控制中心：下拉控制中心 →「+」→「添加控制」→ 搜索「简记」。
+- iPad：长按主屏幕空白处 →「编辑」→「添加小组件」→ 搜索「简记」，有超大尺寸可选。
+- Mac：桌面右键 →「编辑小组件」→ 搜索「简记」。</p>
+<p><strong>iPhone、iPad 和 Mac 的数据怎么同步？</strong>
+每台设备登录同一个 Apple 账户，在「设置 → 你的名字 → iCloud →（已存储到 iCloud）显示全部」里确认「简记」已打开，数据会自动同步，一般几秒到一分钟。</p>
+<p><strong>没收到提醒通知？</strong>
+请在「设置 → 通知 → 简记」中允许通知。带具体时间的待办到点提醒；只写了日期的，那天早上 9 点提醒一次。</p>
+<h2>FAQ (English)</h2>
+<ul>
+<li><strong>Add a to-do:</strong> type in the bottom field, e.g. "tomorrow 3pm report #Work", or tap the calendar button to pick date, time and repeat.</li>
+<li><strong>Completed items:</strong> hidden from the home list; tap the eye button at the top right to show them, and tap the check to restore.</li>
+<li><strong>Voice input:</strong> tap the mic and speak, e.g. "3pm meeting at office, set an alarm".</li>
+<li><strong>Archive:</strong> swipe left and choose Archive for things you planned but skipped; they show greyed out in the calendar.</li>
+<li><strong>Sync:</strong> sign in to the same Apple Account on each device and make sure JianJi is turned on under Settings → [your name] → iCloud → Saved to iCloud.</li>
+<li><strong>Reminders:</strong> allow notifications in Settings → Notifications → JianJi.</li>
+</ul>
+</section>
+<footer>© 2026 简记 JianJi · 联系：livviaa@163.com</footer>
+</div></body></html>
